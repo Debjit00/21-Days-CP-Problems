@@ -1,0 +1,30 @@
+Title:
+Statement:
+In an XY plane, n points are marked and then all the points are joined to the origin using lines. It is possible that one line passes through more than one point. Your task is to output the slope of the line passing through the maximum number of points.
+
+Note:For given input, only one such line will exist.
+
+Input:
+The first line of a test contains an integer t (1 ≤ t ≤ 10^3), the number of test cases.
+For each test case, the first line contains an integer n (1 ≤ n ≤ 10^3), the number of lines marked on the plane. Next n lines contain n points, with x and y coordinate respectively (1≤x,y≤10^2).
+
+Output:
+For each test case, output on a separate line the slope of the line passing through the maximum number of points. The answer should be accurate up to the second decimal (10^-2 accuracy).
+Note: The answer will be representable in double format.
+
+Example:
+Input:
+2
+4
+1 7
+3 8
+6 42
+2 14
+3
+3 2
+1 21
+6 4
+
+Output:
+7
+0.66667
