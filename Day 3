@@ -1,0 +1,23 @@
+Statement:
+You are given a binary string s made up of only 1s and 0s. Considering every number at every index differently, count the number of subsequences in s that are equal to “101”.
+The number of sequences might be a huge number, so answer it modulo 1000000007.
+
+Note: A subsequence is a string made from another string by deleting some or no characters from the original string, while keeping the order the same.
+
+Input:
+Each test begins with a line containing an integer t (1 ≤ t ≤ 10^3), the number of test cases. For each test case, the first line contains n (1 ≤ n ≤ 10^5), the size of string s. The second line contains the string s.
+
+Output:
+For each test case output on a separate line, the number of subsequences in s that are equal to “101”.
+
+Example:
+Input:
+2
+5
+11011
+7
+1010101
+
+Output:
+4
+10
