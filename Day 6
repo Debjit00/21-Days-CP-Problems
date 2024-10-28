@@ -1,0 +1,29 @@
+Statement:
+You are given a string s consisting of lowercase English letters and an integer k. A substring is considered "unstable" if it contains at least one vowel and at least one consonant. Your task is to find the number of distinct "unstable" substrings of length k for multiple test cases.
+
+Note: A vowel is defined as one of 'a', 'e', 'i', 'o', 'u', while all other letters are consonants.
+
+1 ≤ k ≤ ∣s∣ ≤ 10^6 (total length of all strings across test cases will not exceed 10^6)
+
+Input:
+The first line contains an integer T (1 ≤ T ≤ 10^5) — the number of test cases.
+For each test case:
+The first line contains the string s (1 ≤ |s| ≤ 10^5).
+The second line contains the integer k (1 ≤ k ≤ |s|).
+
+It is guaranteed that the sum of length of strings over all test cases does not exceed 10^6.
+
+Output:
+For each test case, print the number of distinct "unstable" substrings of length k.
+
+Example:
+Input:
+2
+aeiouxyz
+3
+abcde
+2
+
+Output:
+2
+2
