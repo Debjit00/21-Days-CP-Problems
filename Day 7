@@ -1,0 +1,29 @@
+Statement:
+You are given a large square matrix that is made up of smaller square submatrices. The large matrix has dimensions of n^2*n^2 where n is a given number. The large matrix is divided into small square submatrices, each of size n×n.
+The large matrix can be thought of as a grid of these smaller submatrices, arranged like tiles on a floor.
+You are given a specific cell in the large matrix, identified by coordinates (x,y) where:
+x is the row index.
+y is the column index.
+Your task is to determine which small n×n submatrix contains the cell located at (x,y) and then compute the sum of all the numbers in that particular submatrix.
+
+Input:
+An integer n (1 ≤ n ≤ 50) — the size of the small square submatrices.
+A matrix of size n^2*n^2 filled with integers.
+Two integers x and y (1 ≤ x, y <= n^2) — the coordinates of the cell in the large matrix.
+
+The matrix size is n^2*n^2 , so the maximum possible matrix size is 2500×2500 (when n=50).
+
+Output:
+Print the sum of all elements in the n×n submatrix that contains the cell at position (x,y).
+
+Example:
+Input:
+2
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+3 2
+
+Output:
+46
