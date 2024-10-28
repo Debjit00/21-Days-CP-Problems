@@ -1,0 +1,14 @@
+Title: Kagebushin-no-Jutsu or Shadow Clone 
+
+Statement:
+There will be two inputs x, y (initial amount of chakra and the number of spy ninjas).
+In Shadow Clone Jutsu, the user can make multiple clones but their chakra is divided among them.
+Now the user needs to use the Jutsu to stop all the spies from escaping with some top-secret info. So the user has to make at least y clones and the chakra in each clone will be x/y.
+Now if the chakra gets below 1, the user will die and will be unable to stop the infiltration.
+
+Input:
+The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases
+The only line of each test case contains 2 integers x and y (1 ≤ x, y ≤ 1000), where x is the initial amount of chakra, and y is number of spy ninjas.
+
+Output:
+For each of the t test cases, output "YES" 
