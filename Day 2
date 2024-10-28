@@ -7,8 +7,22 @@ Now the user needs to use the Jutsu to stop all the spies from escaping with som
 Now if the chakra gets below 1, the user will die and will be unable to stop the infiltration.
 
 Input:
-The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases
-The only line of each test case contains 2 integers x and y (1 ≤ x, y ≤ 1000), where x is the initial amount of chakra, and y is number of spy ninjas.
+The first line contains a single integer t (1 ≤ t ≤ 100) — the number of test cases.
+The only line of each test case contains 2 integers x and y (1 ≤ x, y ≤ 1000) — where x is the initial amount of chakra, and y is number of spy ninjas.
 
 Output:
-For each of the t test cases, output "YES" 
+For each of the t test cases, print "YES" if the user doesn't dies and stops the infiltration else print "NO". 
+
+Example:
+input:
+4
+12 6
+20 10
+3 4
+4 3
+
+output:
+YES
+YES
+NO
+YES
