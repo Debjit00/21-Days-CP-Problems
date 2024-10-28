@@ -1,1 +1,17 @@
+Title: Clone Jutsu
+
 Statement:
+output the same text as the input.
+
+Input:
+The first and only line of input will contain a single string S.
+
+Output:
+Print the exact string S.
+
+Example:
+input:
+Naruto
+
+output:
+Naruto
