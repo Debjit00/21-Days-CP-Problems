@@ -1,1 +1,31 @@
+Statement:
+You are given an array ‘a’ of length n consisting of integers, an array of indices ‘ind’ of length m (where 1≤ind i≤n1), and an array ‘b’ of length m consisting of integers. You need to perform m update operations on the array a such that during the i-th operation, you set a[indi]= bi​. However, you can rearrange the indices in ‘ind’ and the integers in ‘b’ to achieve the smallest possible array after all updates.
+An array x is smaller than an array y if:
+In the first position where x and y differ, the value in array x is less than the corresponding value in array y.
 
+Input:
+The first line contains an integer t (1 ≤ t ≤ 10^4) — the number of test cases.
+For each test case:
+The first line contains two integers n and m (1 ≤ n,m ≤ 10^5) — the length of the array a and the number of updates.
+The second line contains the array a of length n consisting of integers.
+The third line contains m integers ind1,ind2,…,indm (1 ≤ indi​ ≤ n) — the array of indices.
+The fourth line contains the array b of length m consisting of integers.
+
+Output:
+For each test case, output the smallest array a that can be obtained by rearranging the indices and the integers.
+
+Example:
+Input:
+2
+5 3
+4 3 1 2 5
+1 3 4
+7 8 9
+4 2
+1 3 5 8
+2 1
+67 6
+
+Output:
+7 3 8 9 5
+6 67 5 8
