@@ -1,1 +1,7 @@
-
+Dynamic Programming:
+Given array of N elements. Start from index 1, you need to reach index N.
+Each turn you move from index i to either i+1 or i+2 until you reach the end.
+Find the maximum sum of visited elements (including 1st and last).
+Constraints:
+N: 1 to 1e5
+arr[i]: -10^9 to 10^9
