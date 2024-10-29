@@ -1,1 +1,6 @@
-
+Number Theory II:
+For any positive integer k, a number is called k-prime if it has k distinct prime factors.
+Find the number of k-primes from 1 to N for a given k.
+Constraints:
+N: 1 to 4x10^5
+k: 1 to 100
