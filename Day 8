@@ -1,1 +1,22 @@
+Statement:
+You are to follow a path of n steps each numbered from 1 to n, your journey starts at 1 and ends at n.
+For each step, you have to perform checks according to priority order(highest to lowest), if a check fails you move on to the next check and if it doesn’t you perform the action according to the check. The checks given are in priority order (highest to lowest):
+Check 1: If your step’s number is prime, you can either move 1 step ahead or 3 steps ahead.
+Check 2:If your step’s number is not prime, you have to move 1 step ahead.
 
+Note: If your step number is n, your journey ends and you can’t do a check nor move.
+
+In how many cases would you reach the nth step if you start at step 1?
+
+Input:
+Each test contains a single line containing n (2 ≤ n ≤ 100), the total number of steps.
+
+Output:
+For each test, output the number of cases in which you will reach the nth step.
+
+Example:
+Input:
+80
+
+Output:
+186624
