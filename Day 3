@@ -21,3 +21,19 @@ Input:
 Output:
 4
 10
+
+
+void solve() {
+	// int n, m; string s, target;
+	// cin >> n >> m >> s >> target;
+	int n, m=3; string s, target="101";
+	cin >> n >> s;
+
+	vi dp(m, 0);
+	for(char c: s) {
+		for(int i=m-1; i>0; i--)
+			if(c == target[i]) dp[i] = (dp[i] + dp[i-1]) % mod;
+		if(c == target[0]) dp[0]++;
+	}
+	cout << dp[m-1] << endl;
+}
