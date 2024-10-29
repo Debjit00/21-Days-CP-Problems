@@ -1,1 +1,6 @@
-
+Given an array of N elements. Q queries need to be answered.
+Query: Input L and R, return the OR of all elements in range L to R (inclusive)
+more formally find arr[L] | arr[L+1] | arr[L+2]... | arr[R].
+Constraints:
+N, Q: 1 to 10^5	
+L, R: 1 to N
