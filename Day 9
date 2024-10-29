@@ -1,1 +1,22 @@
+Statement:
+You are given an array of n numbers. Suppose for some l,r (1 ≤ l ≤ r ≤ n), there exist k distinct numbers between index l and r(inclusive). What is the minimum value of (r-l+1) for a given array.
 
+Input:
+Each test begins with a line containing an integer t (1 ≤ t ≤ 10^2), the number of test cases. For each test case, the first line contains two integers n,k (1 ≤ k ≤ n ≤ 10^5), the number of elements in the array. This is followed by a line containing n integers in range [1,10^9];
+
+Output:
+For each test case output on a separate line, the minimum value of (r-l+1) such that there exist exactly k distinct numbers.
+
+Note: For a given test, the array will have more than k distinct numbers, so an answer will always exist.
+
+Example:
+Input:
+2
+6 5
+7 4 3 2 1 2
+7 3
+4 3 3 2 2 2 1
+
+Output:
+5
+4
