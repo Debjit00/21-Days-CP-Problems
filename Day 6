@@ -1,7 +1,12 @@
-Statement:
-You are given a string s consisting of lowercase English letters and an integer k. A substring is considered "unstable" if it contains at least one vowel and at least one consonant. Your task is to find the number of distinct "unstable" substrings of length k for multiple test cases.
+Title: Yin-Yang
 
-Note: A vowel is defined as one of 'a', 'e', 'i', 'o', 'u', while all other letters are consonants.
+Statement:
+Ninja Food is a special kind of nutritious food, imbued with chakra, that is used to boost stamina, healing and durability. They are prepared by mixing special herbs. These herbs are made of either Yin chakra or Yang chakra. To make Ninja Food, both Yin and Yang are required, even if one of them is present in very small amount.
+
+You are given a string s consisting of lower-case alphabets and digits only. Each of the characters in the string represent a herb. The alphabets represent herbs with Yin chakra and the digits represent herbs with Yang chakra.
+You are also given an integer k denoting the number of herbs required to prepare Ninja Food. According to Ninja Rulebook, only those herbs that are present consecutively in the string s can be used.
+
+Your task is to find the number of distinct substrings of length k that contain at least one herb of both types.
 
 1 ≤ k ≤ ∣s∣ ≤ 10^6 (total length of all strings across test cases will not exceed 10^6)
 
@@ -14,16 +19,25 @@ The second line contains the integer k (1 ≤ k ≤ |s|).
 It is guaranteed that the sum of length of strings over all test cases does not exceed 10^6.
 
 Output:
-For each test case, print the number of distinct "unstable" substrings of length k.
+For each test case, print the number of distinct substrings of length k that can be used to prepare Ninja Food.
 
-Example:
+Examples:
 Input:
-2
-aeiouxyz
-3
-abcde
-2
+4
+5 3
+abc12
+10 4
+naruto2024
+11 3
+2wenty1days
+6 2
+z0z0z0
 
 Output:
 2
-2
+3
+4
+5
+
+Hidden testcase:
+Input:
