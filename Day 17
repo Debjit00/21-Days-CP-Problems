@@ -1,1 +1,26 @@
-Binary Exponentiation
+Statement:
+Given two integers A and B.
+Find the value of A ^ B % (10^9+7).
+
+Input:
+The first line contains a single integer t (1 <= t <= 10^5) — the number of test cases.
+The first line of each testcase contains two integers A and B (0 <= A, B <= 10^18).
+
+Output:
+For each test case, print the value of A ^ B % (10^9+7).
+
+Sample:
+input:
+5
+1 2
+2 3
+5 3
+2 10
+47381 128934983
+
+output:
+1
+8
+125
+1024
+341290703
