@@ -1,7 +1,14 @@
+Statement:
 Given numbers A and B.
 Operation:
 -Choose any of the number
 -Reduce the number by half if divisible by 2 or reduce by two-third if divisible by 3 or reduce by four-fifth if divisible by 5 else do nothing
+
 Find the minimum no. of operations to make A and B equal else return -1 if not possible.
+
 Constraints:
 A, B: 1 to 10^9
+
+Input:
+The first line contains an integer t (1 ≤ t ≤ 100) — the number of test cases.
+The first line of each testcase contains two integers $A$ and $B$ (1 \le a, b \le 10^9)
