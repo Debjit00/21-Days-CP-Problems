@@ -1,6 +1,16 @@
-Number Theory II:
-For any positive integer k, a number is called k-prime if it has k distinct prime factors.
-Find the number of k-primes from 1 to N for a given k.
-Constraints:
-N: 1 to 4x10^5
-k: 1 to 100
+Statement:
+A number x is called k-prime if x has k distinct prime factors.
+Example - 140 is a 3-prime because it has 3 distince prime factors are 2, 5, and 7.
+
+Find the number of k-primes from 1 to N.
+
+Input:
+The first line contains a single integer t (1 <= t <= 10^5) - the number of test cases.
+The first and only line of each test case contains two integers n and k (1 <= n <= 10^6, 1 <= k <= 200).
+
+Output:
+For each test case, print the number of k-primes from 1 to n.
+
+Sample:
+input:
+4
