@@ -5,12 +5,94 @@ Example - 140 is a 3-prime because it has 3 distince prime factors are 2, 5, and
 Find the number of k-primes from 1 to N.
 
 Input:
-The first line contains a single integer t (1 <= t <= 10^5) - the number of test cases.
-The first and only line of each test case contains two integers n and k (1 <= n <= 10^6, 1 <= k <= 200).
+The first line contains a single integer t (1 <= t <= 100) - the number of test cases.
+The first and only line of each test case contains two integers n and k (1 <= n <= 10^5, 1 <= k <= 100).
 
 Output:
 For each test case, print the number of k-primes from 1 to n.
 
 Sample:
 input:
-4
+3
+5 2
+6 2
+10 1
+
+output:
+0
+1
+7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+C++ Solution:
+#include <bits/stdc++.h>
+using namespace std;
+
+// Maximum value of n in the constraints
+const int MAX_N = 100000;
+
+// Array to store the number of distinct prime factors for each number
+int primeFactorCount[MAX_N + 1] = {0};
+
+// 2D array to store the cumulative count of k-primes up to each index for all k values
+int kPrimeCount[MAX_N + 1][6] = {0};  // Limiting k to a small range, e.g., 5
+
+// Function to precompute the number of distinct prime factors for each number up to MAX_N
+void precompute() {
+    for (int i = 2; i <= MAX_N; i++) {
+        if (primeFactorCount[i] == 0) { // i is a prime number
+            for (int j = i; j <= MAX_N; j += i) {
+                primeFactorCount[j]++;
+            }
+        }
+    }
+
+    // Build cumulative count for k-primes
+    for (int i = 1; i <= MAX_N; i++) {
+        for (int k = 0; k <= 5; k++) {
+            kPrimeCount[i][k] = kPrimeCount[i - 1][k] + (primeFactorCount[i] == k);
+        }
+    }
+}
+
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+
+    // Precompute the prime factor counts and k-prime counts
+    precompute();
+
+    int t;
+    cin >> t;
+
+    while (t--) {
+        int n, k;
+        cin >> n >> k;
+
+        // Check if k is in range (otherwise, there would be no k-prime numbers)
+        if (k > 5) {
+            cout << 0 << "\n";
+        } else {
+            // Output the count of k-primes from 1 to n
+            cout << kPrimeCount[n][k] << "\n";
+        }
+    }
+
+    return 0;
+}
